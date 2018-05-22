@@ -8,9 +8,10 @@ cache:
 
 install:
   - npm install
+  - npm build
 
 script:
   - npm test
 
-after_script: # Upload coverage reports 
+after_script: # Upload coverage reports
   - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
