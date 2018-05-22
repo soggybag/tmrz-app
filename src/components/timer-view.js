@@ -6,10 +6,6 @@ import { toggleTimer } from '../actions'
 import './timer-view.css'
 
 class TimerView extends Component {
-  constructor(props) {
-    super(props)
-
-  }
 
   formatTime(time) {
     const ms = Math.round(time / 100)

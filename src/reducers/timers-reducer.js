@@ -1,7 +1,6 @@
 import { NEW_TIMER, RESET_TIMER, DELETE_TIMER,
         START_TIMER, STOP_TIMER, TOGGLE_TIMER, UPDATE } from '../actions';
 
-
 import Timer from './timer'
 //                                action = {type:'TOGGLE_TIMER', payload: 1}
 const timerReducer = (state = [], action) => {
@@ -49,7 +48,7 @@ const timerReducer = (state = [], action) => {
 
     case TOGGLE_TIMER:
       const newState = state.map((timer, index) => {
-        if (action.payload.index == index) {
+        if (action.payload.index === index) {
           return {...timer, isRunning: !timer.isRunning}
         }
         return timer

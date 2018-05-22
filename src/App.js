@@ -11,7 +11,6 @@ import ListTimers from './components/list-timers'
 import './App.css';
 import { update } from './actions'
 
-import TimerView from './components/timer-view'
 import { loadState, saveState } from './utils'
 
 import throttle from 'lodash/throttle'

@@ -1,14 +1,13 @@
-import { SELECT_TIMER } from '../actions'
+import { SELECT_TIMER } from '../actions';
 
 const selectTimerReducer = (state = null, action) => {
   switch (action.type) {
     case SELECT_TIMER:
-      return state = action.payload.index
-      break
+      return state = action.payload.index;
 
     default:
-      return state
+      return state;
   }
 }
 
-export default selectTimerReducer
+export default selectTimerReducer;
