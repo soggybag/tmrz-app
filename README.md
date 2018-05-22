@@ -1,4 +1,4 @@
-![TravisCI Badge](https://travis-ci.org/soggybag/tmrz-app.svg?branch=master)
+[![Build Status](https://travis-ci.org/soggybag/tmrz-app.svg?branch=master)](https://travis-ci.org/soggybag/tmrz-app)
 
 # Tmrz
 
