@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/soggybag/tmrz-app.svg?branch=master)](https://travis-ci.org/soggybag/tmrz-app)
 
+[![Coverage Status](https://coveralls.io/repos/github/soggybag/tmrz-app/badge.svg?branch=master)](https://coveralls.io/github/soggybag/tmrz-app?branch=master)
+
 # Tmrz
 
 An app that creates a list of vowel free timers.
