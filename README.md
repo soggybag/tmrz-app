@@ -1,3 +1,5 @@
+![TravisCI Badge](https://travis-ci.org/soggybag/tmrz-app.svg?branch=master)
+
 # Tmrz
 
 An app that creates a list of vowel free timers.
@@ -12,7 +14,7 @@ Uses React to display views.
 Uses Redux to manage application state.
 
 Uses localStorage to persist timer data
-between sessions. 
+between sessions.
 
 ## installation
 
