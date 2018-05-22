@@ -3,10 +3,10 @@
 
 # Tmrz
 
-An app that creates a list of vowel free timers.
+An app that creates a list of vowel free timers!
 Timers can run and stop, have a name and time!
 
-Created with React.  
+Created with Create React App and Redux.  
 
 ## How does it work?
 
@@ -14,7 +14,7 @@ Uses React to display views.
 
 Uses Redux to manage application state.
 
-Uses localStorage to persist timer data
+Uses `localStorage` to persist timer data
 between sessions.
 
 ## installation
