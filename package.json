@@ -20,6 +20,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "coveralls": "^3.0.1"
+    "coveralls": "^3.0.1",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "redux-test-utils": "^0.2.2",
+    "sinon": "^5.0.9"
   }
 }

@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
+import TimerTitle from './timer-title'
+
 import { toggleTimer } from '../actions'
+import { formatTime } from '../utils'
 
 import './timer-view.css'
 
 class TimerView extends Component {
 
-  formatTime(time) {
-    const ms = Math.round(time / 100)
-    const secs = Math.floor(time / 1000)
-    const mins = Math.floor(secs / 60)
-    const hrs = Math.floor(mins / 60)
-    return `${hrs % 60}:${mins % 60}:${secs % 60}.${ms % 10}`
+  componentDidMount() {
+    
   }
 
   render() {
@@ -22,16 +21,10 @@ class TimerView extends Component {
 
     return (
       <div className="timer-view">
-        <div>
-          <h2 className="timer-view-name__h2">{name}</h2>
-          <h1 className="timer-view-time__h1">{this.formatTime(time)}</h1>
-          <small>{time}</small>
-        </div>
+        <TimerTitle {...this.props} />
         <button
           className={`timer-view__button timer-view__button--${buttonClass}`}
           onClick={(e) => {
-            // store.dispatch(toggleTimer(index))
-            // store.dispatch({type:'TOGGLE', payload: 1})
             toggleTimer(index)
           }}>{isRunning ? "Stop" : "Start"}</button>
       </div>
