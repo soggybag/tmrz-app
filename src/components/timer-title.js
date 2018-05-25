@@ -8,6 +8,7 @@ class TimerTitle extends Component {
 
   render() {
     const { name, time } = this.props.timer
+    // { name:"Hello", time: 0, isRunning: false }
 
     return (
       <div>
