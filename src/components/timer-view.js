@@ -1,10 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
 import TimerTitle from './timer-title'
-
 import { toggleTimer } from '../actions'
-import { formatTime } from '../utils'
 
 import './timer-view.css'
 
