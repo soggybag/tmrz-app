@@ -26,7 +26,7 @@ export const mountWithStore = (component, store) => {
 }
 
 describe("timer-view", () => {
-  it('should render successfully', () => {
+  it('should have an input and a button', () => {
     const state = { toggleTimer: () => {} }
     const store = createMockStore(state)
     const newTimer = mountWithStore(<NewTimer />, store)
@@ -35,15 +35,17 @@ describe("timer-view", () => {
     expect(newTimer.find('.new-timer__button').length).toBe(1)
   })
 
-  it('should call component did mount', () => {
-    const state = { addTimer: () => {} }
+  it('should set input and submit the value', () => {
+    const name = 'hello'
+    const state = { addTimer: (input) => {expect(input).tobe(name)} }
     const store = createMockStore(state)
     // Use a spy to watch for function invocation - must do this before mount!
     sinon.spy(NewTimer.prototype, 'componentDidMount')
     sinon.spy(state, 'addTimer')
     const newTimer = mountWithStore(<NewTimer />, store)
-    expect(NewTimer.prototype.componentDidMount.calledOnce).toBe(true)
-    // ???
-    // expect(NewTimer.props.addTimer.calledOnce).toBe(true)
+    newTimer.setState({ name })
+    const button = newTimer.find('.new-timer__button').get(0)
+    button.simulate('click');
+    sinon.assert.called()
   })
 })

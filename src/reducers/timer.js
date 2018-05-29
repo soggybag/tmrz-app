@@ -1,3 +1,5 @@
+
+
 export default class Timer {
   constructor(name) {
     this.name = name
@@ -5,3 +7,6 @@ export default class Timer {
     this.isRunning = false
   }
 }
+
+// new Timer('Hello')
+// { name:"Hello", time: 0, isRunning: false }
